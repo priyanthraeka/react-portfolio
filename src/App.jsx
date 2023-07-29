@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <div className="w-full bg-[#111]">
+    <div className="w-full bg-[#111] pb-20">
       <Navbar />
       <Home />
       <About />

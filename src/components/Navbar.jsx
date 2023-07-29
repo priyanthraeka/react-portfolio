@@ -19,7 +19,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <div className="bg-[#111] fixed top-0 left-0 right-0">
+    <div className="bg-[#111] fixed top-0 left-0 right-0 z-[999999]">
       <div className="h-20 flex items-center justify-between text-white w-11/12 lg:w-7/12 m-auto text-lg font-bold">
         <h1>Eka Priyanthara</h1>
         <ul className="flex gap-5">

@@ -20,13 +20,13 @@ const Home = () => {
           <a href="mailto:priyantharaeka067@gmail.com" className="w-fit ms-1">
             <Button title="Contact me" />
           </a>
-          <a href="#" className="ms-3">
+          <a href="#" className="ms-3 hover:text-[#3bc9db] duration-300">
             <BsTwitter size={25} />
           </a>
-          <a href="#">
+          <a href="#" className="hover:text-[#3bc9db] duration-300">
             <BsGithub size={25} />
           </a>
-          <a href="#">
+          <a href="#" className="hover:text-[#3bc9db] duration-300">
             <BsLinkedin size={25} />
           </a>
         </div>
