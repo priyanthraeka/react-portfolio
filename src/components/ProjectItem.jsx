@@ -26,7 +26,9 @@ const ProjectItem = (props) => {
         <img
           src={image}
           alt={title}
-          className={`w-[548px] h-[280px] rounded-lg transition-all ${
+          width={1920}
+          height={1080}
+          className={`aspect-video rounded-lg object-fill transition-all ${
             onMouseOver && "scale-105 duration-300"
           }`}
         />
@@ -49,7 +51,7 @@ const ProjectItem = (props) => {
           <BsGithub size={25} />
         </a>
       </div>
-      <p className="text-lg mt-5">{description}</p>
+      <p className="text-lg mt-5 text-justify">{description}</p>
       <div className="flex flex-wrap mt-5 gap-2">
         {techStack.map((item, index) => (
           <div

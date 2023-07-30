@@ -1,4 +1,4 @@
-import wedding from "../assets/wedding.png";
+import wedding from "../assets/wedding.jpg";
 import todo from "../assets/todo.png";
 import ProjectItem from "./ProjectItem";
 
@@ -24,11 +24,10 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div
-      id="projects"
-      className="w-11/12 lg:w-7/12 m-auto pt-20 text-white flex flex-col"
-    >
-      <h1 className="text-5xl font-bold text-[#3bc9db]">My Projects</h1>
+    <div id="projects" className="flex flex-col pt-20 text-white">
+      <h1 className="text-4xl md:text-5xl font-bold text-[#3bc9db]">
+        My Projects
+      </h1>
       <div className="flex flex-wrap justify-around gap-10 w-full">
         {projects.map((project, index) => (
           <ProjectItem

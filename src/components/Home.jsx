@@ -6,14 +6,14 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="h-screen pt-16 grid grid-cols-none grid-rows-2 lg:grid-cols-2 lg:grid-rows-none justify-center lg:justify-start w-11/12 lg:w-7/12 m-auto text-white"
+      className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-none w-full text-white h-screen"
     >
-      <div className="flex justify-center flex-col gap-2">
-        <h1 className="font-bold text-5xl">Hello, I&apos;m</h1>
-        <h2 className="font-bold text-6xl">
-          <span className="text-[#3bc9db]">Eka</span> Priyanthara
+      <div className="flex justify-center flex-col gap-2 pt-20">
+        <h1 className="font-bold text-4xl md:text-5xl">Hello, I&apos;m</h1>
+        <h2 className="font-bold text-5xl md:text-6xl">
+          <span className="text-[#3bc9db]">Eka </span>Priyanthara
         </h2>
-        <p className="text-lg ms-1">
+        <p className="text-base md:text-lg ms-1">
           A front-end web developer based from Indonesia.
         </p>
         <div className="flex gap-4 items-center mt-5">
@@ -32,13 +32,15 @@ const Home = () => {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <img
-          src={profilePic}
-          alt="Profile Picture"
-          width={200}
-          height={200}
-          className="bg-slate-200 rounded-full h-[470px] w-[470px]"
-        />
+        <div className="max-h-[470px] max-w-[470px] p-5">
+          <img
+            src={profilePic}
+            alt="Profile Picture"
+            width={450}
+            height={450}
+            className="bg-slate-200 rounded-full w-10/12 md:w-10/12 lg:w-full m-auto"
+          />
+        </div>
       </div>
     </div>
   );

@@ -3,10 +3,7 @@ import svg from "../assets/contact.svg";
 
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      className="w-11/12 lg:w-7/12 m-auto pt-20 text-white flex flex-col"
-    >
+    <div id="contact" className="flex flex-col pt-20 text-white">
       <h1 className="text-5xl font-bold text-[#3bc9db]">Get In Touch!</h1>
       <div className="text-lg grid grid-cols-none grid-rows-1  lg:grid-cols-2 lg:grid-rows-none gap-10 mt-10 items-start">
         <div className="flex justify-start items-center w-full">
