@@ -18,7 +18,7 @@ const ProjectItem = (props) => {
 
   return (
     <div
-      className="mt-10 max-w-[500px] rounded-md"
+      className="max-w-[500px] rounded-md"
       onMouseOver={onHoverHandler}
       onMouseLeave={onLeaveHandler}
     >
@@ -51,12 +51,12 @@ const ProjectItem = (props) => {
           <BsGithub size={25} />
         </a>
       </div>
-      <p className="text-lg mt-5 text-justify">{description}</p>
+      <p className="text-base mt-5">{description}</p>
       <div className="flex flex-wrap mt-5 gap-2">
         {techStack.map((item, index) => (
           <div
             key={index}
-            className="rounded-md py-2 px-4 text-base text-white bg-[#222222] text-center"
+            className="rounded-md py-2 px-4 text-base text-white bg-[#222222] hover:bg-[#333] text-center"
           >
             {item}
           </div>

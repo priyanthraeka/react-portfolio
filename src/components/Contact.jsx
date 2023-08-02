@@ -18,20 +18,47 @@ const Contact = () => {
         <div className="flex flex-col gap-5 mt-10 ms-1">
           <p className="text-lg flex items-center gap-5">
             <BsEnvelope size={25} color="#3bc9db" />
-            <span>priyantharaeka067@gmail.com</span>
+            <a
+              href="mailto:priyantharaeka067@gmail.com"
+              className="hover:text-[#3bc9db]"
+            >
+              priyantharaeka067@gmail.com
+            </a>
           </p>
           <p className="text-lg flex items-center gap-5">
             <BsPinMap size={25} color="#3bc9db" />
-            <span>Denpasar, Bali</span>
+            <a
+              href="https://goo.gl/maps/xWfsCxJpKnJmL2kM7"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-[#3bc9db]"
+            >
+              Denpasar, Bali
+            </a>
           </p>
           <div className="flex gap-3 mt-5">
-            <a href="#" className="hover:text-[#3bc9db] duration-300">
+            <a
+              href="https://twitter.com/priyanthraeka"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-[#3bc9db] duration-300"
+            >
               <BsTwitter size={25} />
             </a>
-            <a href="#" className="hover:text-[#3bc9db] duration-300">
+            <a
+              href="https://github.com/priyanthraeka"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-[#3bc9db] duration-300"
+            >
               <BsGithub size={25} />
             </a>
-            <a href="#" className="hover:text-[#3bc9db] duration-300">
+            <a
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-[#3bc9db] duration-300"
+            >
               <BsLinkedin size={25} />
             </a>
           </div>

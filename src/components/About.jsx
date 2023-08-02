@@ -25,12 +25,17 @@ const About = () => {
   };
 
   const skillsJSX = (
-    <>
-      <div>
-        <p className="text-[#3bc9db]">Web Development</p>
-        <p>Front-end Web Developer</p>
-      </div>
-    </>
+    <div className="flex flex-wrap gap-2 text-base">
+      <p className="p-2 rounded-lg bg-[#222222] hover:bg-[#333] w-fit">HTML</p>
+      <p className="p-2 rounded-lg bg-[#222222] hover:bg-[#333] w-fit">CSS</p>
+      <p className="p-2 rounded-lg bg-[#222222] hover:bg-[#333] w-fit">
+        Javascript
+      </p>
+      <p className="p-2 rounded-lg bg-[#222222] hover:bg-[#333] w-fit">React</p>
+      <p className="p-2 rounded-lg bg-[#222222] hover:bg-[#333] w-fit">
+        TailwindCSS
+      </p>
+    </div>
   );
 
   const experienceJSX = (
@@ -65,7 +70,7 @@ const About = () => {
             alt="Profile Picture"
             width={500}
             height={250}
-            className="rounded-3xl w-10/12 md:w-10/12 lg:w-full m-auto"
+            className="rounded-3xl w-10/12 m-auto"
           />
         </div>
       </div>

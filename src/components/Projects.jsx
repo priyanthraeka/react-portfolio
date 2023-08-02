@@ -1,5 +1,6 @@
 import wedding from "../assets/wedding.jpg";
 import todo from "../assets/todo.png";
+import djaje from "../assets/djaje.png";
 import ProjectItem from "./ProjectItem";
 
 const projects = [
@@ -8,8 +9,7 @@ const projects = [
     image: wedding,
     viewLink: "https://wedding-website-neon.vercel.app/dika-ewikk",
     githubLink: "https://wedding-website-neon.vercel.app/dika-ewikk",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sunt, optio veniam facilis, vero blanditiis fugiat voluptatum corrupti, quaerat similique pariatur quos voluptatem dolorum qui est eius neque harum recusandae.",
+    description: "Aplikasi undangan pernikahan online.",
     techStack: ["HTML", "CSS", "Javascript", "React", "TailwindCSS"],
   },
   {
@@ -17,8 +17,17 @@ const projects = [
     image: todo,
     viewLink: "https://priyanthraeka.github.io/todo-list/",
     githubLink: "https://github.com/priyanthraeka/todo-list",
-    description: "Simple Todo List",
+    description:
+      "Aplikasi Todo List yang dibuat dengan menggunakan Javascript dan Bootstrap.",
     techStack: ["HTML", "Bootstrap", "Javascript"],
+  },
+  {
+    title: "Djaje Clone",
+    image: djaje,
+    viewLink: "https://djaje-clone.vercel.app/",
+    githubLink: "https://github.com/priyanthraeka/djaje-clone",
+    description: "Aplikasi ini adalah cloning dari djaje.com",
+    techStack: ["HTML", "TailwindCSS", "NextJS", "ReactJS"],
   },
 ];
 
@@ -28,7 +37,7 @@ const Projects = () => {
       <h1 className="text-4xl md:text-5xl font-bold text-[#3bc9db]">
         My Projects
       </h1>
-      <div className="flex flex-wrap justify-around gap-10 w-full">
+      <div className="flex flex-wrap justify-center gap-10 mt-10">
         {projects.map((project, index) => (
           <ProjectItem
             key={index}
