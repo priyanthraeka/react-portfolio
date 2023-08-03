@@ -63,7 +63,13 @@ const Contact = () => {
             </a>
           </div>
           <div className="mt-10">
-            <Button title="Download CV" />
+            <a
+              href="https://drive.google.com/file/d/1VMkGxFKOnYQqre5ZdyCILAaeWcpHuVH8/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button title="Download CV" />
+            </a>
           </div>
         </div>
       </div>
