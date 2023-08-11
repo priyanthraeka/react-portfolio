@@ -31,7 +31,9 @@ const About = () => {
       <p className="p-2 rounded-lg bg-[#222222] hover:bg-[#333] w-fit">
         Javascript
       </p>
-      <p className="p-2 rounded-lg bg-[#222222] hover:bg-[#333] w-fit">React</p>
+      <p className="p-2 rounded-lg bg-[#222222] hover:bg-[#333] w-fit">
+        React.js
+      </p>
       <p className="p-2 rounded-lg bg-[#222222] hover:bg-[#333] w-fit">
         TailwindCSS
       </p>

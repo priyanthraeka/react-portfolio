@@ -6,6 +6,7 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import Button from "./Button";
+import ContactForm from "./ContactForm/ContactForm";
 
 const Contact = () => {
   return (
@@ -38,7 +39,7 @@ const Contact = () => {
           </p>
           <div className="flex gap-3 mt-5">
             <a
-              href="https://twitter.com/priyanthraeka"
+              href="https://www.twitter.com/priyanthraeka"
               target="_blank"
               rel="noreferrer"
               className="hover:text-[#3bc9db] duration-300"
@@ -46,7 +47,7 @@ const Contact = () => {
               <BsTwitter size={25} />
             </a>
             <a
-              href="https://github.com/priyanthraeka"
+              href="https://www.github.com/priyanthraeka"
               target="_blank"
               rel="noreferrer"
               className="hover:text-[#3bc9db] duration-300"
@@ -64,39 +65,16 @@ const Contact = () => {
           </div>
           <div className="mt-10">
             <a
-              href="https://drive.google.com/file/d/1VMkGxFKOnYQqre5ZdyCILAaeWcpHuVH8/view?usp=sharing"
+              href="https://drive.google.com/file/d/1DJN-ACvBZoIiVP2N2U9SsIOB7OWWPeRb/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
-              <Button title="Download CV" />
+              <Button title="Unduh CV" />
             </a>
           </div>
         </div>
       </div>
-      <form className="flex flex-col gap-5 w-full text-black">
-        <input
-          type="text"
-          placeholder="Nama"
-          className="border-b-4 border-[#3bc9db] p-5 focus:outline-none w-full"
-          required
-        />
-        <input
-          type="text"
-          placeholder="Email"
-          className="border-b-4 border-[#3bc9db] p-5  focus:outline-none w-full"
-          required
-        />
-        <textarea
-          cols="30"
-          rows="10"
-          placeholder="Pesan"
-          className="border-b-4 border-[#3bc9db] p-5  focus:outline-none w-full resize-none"
-          required
-        ></textarea>
-        <div className="flex justify-end">
-          <Button title="Send message" />
-        </div>
-      </form>
+      <ContactForm />
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import wedding from "../assets/wedding.jpg";
 import todo from "../assets/todo.png";
 import djaje from "../assets/djaje.png";
+import randomQuoteMachine from "../assets/random-quote-machine.png";
+import drumMachine from "../assets/drum-machine.png";
 import ProjectItem from "./ProjectItem";
 
 const projects = [
@@ -28,6 +30,22 @@ const projects = [
     githubLink: "https://github.com/priyanthraeka/djaje-clone",
     description: "Aplikasi ini adalah cloning dari djaje.com",
     techStack: ["HTML", "TailwindCSS", "NextJS", "ReactJS"],
+  },
+  {
+    title: "Random Quote Machine",
+    image: randomQuoteMachine,
+    viewLink: "https://random-quote-machine-tan.vercel.app/",
+    githubLink: "https://github.com/priyanthraeka/random-quote-machine",
+    description: "Project dari freeCodeCamp",
+    techStack: ["HTML", "TailwindCSS", "ReactJS"],
+  },
+  {
+    title: "Drum Machine",
+    image: drumMachine,
+    viewLink: "https://drum-machine-pearl-beta.vercel.app/",
+    githubLink: "https://github.com/priyanthraeka/drum-machine",
+    description: "Project dari freeCodeCamp",
+    techStack: ["HTML", "TailwindCSS", "ReactJS", "Zustand"],
   },
 ];
 
