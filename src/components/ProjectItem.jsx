@@ -18,7 +18,7 @@ const ProjectItem = (props) => {
 
   return (
     <div
-      className="max-w-[500px] rounded-md"
+      className="max-w-[480px] rounded-md p-2"
       onMouseOver={onHoverHandler}
       onMouseLeave={onLeaveHandler}
     >
@@ -38,7 +38,7 @@ const ProjectItem = (props) => {
           href={viewLink}
           target="_blank"
           rel="noreferrer"
-          className="font-bold text-4xl block hover:text-[#3bc9db] w-fit"
+          className="font-bold text-xl md:text-2xl lg:text-3xl block hover:text-[#3BC9DB] w-fit"
         >
           {title}
         </a>
@@ -46,22 +46,30 @@ const ProjectItem = (props) => {
           href={githubLink}
           target="_blank"
           rel="noreferrer"
-          className="font-bold text-4xl block hover:text-[#3bc9db] w-fit"
+          className="hover:text-[#3BC9DB] block md:hidden"
         >
           <BsGithub size={25} />
         </a>
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noreferrer"
+          className="hover:text-[#3BC9DB] hidden md:block"
+        >
+          <BsGithub size={30} />
+        </a>
       </div>
-      <p className="text-base mt-5">{description}</p>
-      <div className="flex flex-wrap mt-5 gap-2">
+      <p className="text-base md:text-lg lg:text-xl mt-5">{description}</p>
+      <ul className="flex flex-wrap mt-5 gap-2">
         {techStack.map((item, index) => (
-          <div
+          <li
             key={index}
-            className="rounded-md py-2 px-4 text-base text-white bg-[#222222] hover:bg-[#333] text-center"
+            className="rounded-md py-2 px-4 text-sm md:text-base lg:text-lg text-white bg-[#222222] hover:bg-[#333] text-center"
           >
             {item}
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

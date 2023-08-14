@@ -1,4 +1,3 @@
-import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
@@ -9,7 +8,7 @@ function App() {
   return (
     <div className="w-full bg-[#111] pb-20">
       <Navbar />
-      <div className="w-full md:w-11/12 lg:w-9/12 px-2 md:px-5 lg:px-7 m-auto">
+      <div className="w-full px-3 md:w-10/12 m-auto">
         <Home />
         <About />
         <Projects />

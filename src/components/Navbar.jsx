@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { HiMenuAlt1 } from "react-icons/hi";
+import { HiMenu } from "react-icons/hi";
 
 const navLinks = [
   {
@@ -21,23 +21,26 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   return (
-    <div className="bg-[#111] fixed top-0 left-0 right-0 z-[9999]">
-      <div className="h-20 flex items-center justify-between text-white text-lg font-bold w-full md:w-11/12 lg:w-9/12 px-2 md:px-5 lg:px-7 m-auto">
-        <a href="/">
-          <h1 className="text-2xl">Eka Priyanthara</h1>
-        </a>
-        <div className="md:hidden block" onClick={() => setIsOpen(!isOpen)}>
-          <HiMenuAlt1 size={40} color="#fff" />
-        </div>
+    <div className="bg-[#111] fixed left-0 top-0 right-0 h-20 z-[999999]">
+      <div className="h-full w-full flex items-center justify-between px-3 md:w-10/12 md:m-auto">
+        <div className="text-2xl font-bold text-white">Eka Priyanthara</div>
+        <button
+          className="block md:hidden text-lg font-bold text-white p-2 rounded-lg hover:bg-[#222]"
+          onClick={() => {
+            setIsNavbarOpen(!isNavbarOpen);
+          }}
+        >
+          <HiMenu size={35} />
+        </button>
         <ul
-          className={`flex flex-col justify-center items-center gap-2 py-5 bg-[#222] absolute right-0 left-0 top-0 md:flex md:flex-row md:justify-end md:items-center -z-[999999] md:gap-5 md:p-0 md:static md:bg-[#111] md:w-fit transition-all md:z-auto ease-in-out duration-500
-          ${isOpen ? "top-[80px]" : "top-[-180px]"}`}
+          className={`bg-[#222] absolute left-0 right-0 flex flex-col justify-center items-center gap-2 py-5 md:flex-row md:gap-5 px-5 md:bg-[#111] md:h-full md:static 
+          ${isNavbarOpen ? " top-[80px]" : " -top-[180px]"}`}
         >
           {navLinks.map((navLink, index) => (
-            <li key={index}>
+            <li key={index} className="font-bold text-white text-lg">
               <a href={navLink.href}>{navLink.title}</a>
             </li>
           ))}

@@ -1,8 +1,8 @@
 import {
   BsEnvelope,
+  BsGeoAlt,
   BsGithub,
   BsLinkedin,
-  BsPinMap,
   BsTwitter,
 } from "react-icons/bs";
 import Button from "./Button";
@@ -18,21 +18,21 @@ const Contact = () => {
         <h1 className="text-5xl font-bold text-[#3bc9db]">Contact Me</h1>
         <div className="flex flex-col gap-5 mt-10 ms-1">
           <p className="text-lg flex items-center gap-5">
-            <BsEnvelope size={25} color="#3bc9db" />
+            <BsEnvelope size={27} color="#3bc9db" />
             <a
               href="mailto:priyantharaeka067@gmail.com"
-              className="hover:text-[#3bc9db]"
+              className="hover:text-[#3bc9db] text-base md:text-lg lg:text-xl"
             >
               priyantharaeka067@gmail.com
             </a>
           </p>
           <p className="text-lg flex items-center gap-5">
-            <BsPinMap size={25} color="#3bc9db" />
+            <BsGeoAlt size={27} color="#3bc9db" />
             <a
               href="https://goo.gl/maps/xWfsCxJpKnJmL2kM7"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-[#3bc9db]"
+              className="hover:text-[#3bc9db] text-base md:text-lg lg:text-xl"
             >
               Denpasar, Bali
             </a>
@@ -44,7 +44,7 @@ const Contact = () => {
               rel="noreferrer"
               className="hover:text-[#3bc9db] duration-300"
             >
-              <BsTwitter size={25} />
+              <BsTwitter size={27} />
             </a>
             <a
               href="https://www.github.com/priyanthraeka"
@@ -52,7 +52,7 @@ const Contact = () => {
               rel="noreferrer"
               className="hover:text-[#3bc9db] duration-300"
             >
-              <BsGithub size={25} />
+              <BsGithub size={27} />
             </a>
             <a
               href="#"
@@ -60,7 +60,7 @@ const Contact = () => {
               rel="noreferrer"
               className="hover:text-[#3bc9db] duration-300"
             >
-              <BsLinkedin size={25} />
+              <BsLinkedin size={27} />
             </a>
           </div>
           <div className="mt-10">
