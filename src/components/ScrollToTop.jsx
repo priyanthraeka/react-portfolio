@@ -21,15 +21,12 @@ const ScrollToTop = () => {
 
   return (
     <button
-      id="scrollUp"
-      className={`fixed right-5 bottom-5 p-2 rounded-full text-white bg-neutral-800 transition-all duration-300 ease-in z-50 ${
-        !visible && "-right-20"
+      className={`fixed -right-20 bottom-5 p-2 rounded-full text-white bg-neutral-800 transition-all duration-300 ease-in-out z-50 ${
+        visible && "right-5"
       }`}
       onClick={onClickHandler}
     >
-      <span>
-        <HiArrowUp size={30} />
-      </span>
+      <HiArrowUp size={30} />
     </button>
   );
 };
