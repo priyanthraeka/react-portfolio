@@ -4,6 +4,7 @@ import djaje from "../assets/djaje.png";
 import randomQuoteMachine from "../assets/random-quote-machine.png";
 import drumMachine from "../assets/drum-machine.png";
 import ProjectItem from "./ProjectItem";
+import Button from "./Button";
 
 const projects = [
   {
@@ -13,6 +14,7 @@ const projects = [
     githubLink: "https://wedding-website-neon.vercel.app/dika-ewikk",
     description: "Aplikasi undangan pernikahan online.",
     techStack: ["HTML", "CSS", "Javascript", "React", "TailwindCSS"],
+    animationDelay: "0",
   },
   {
     title: "Todo List",
@@ -22,6 +24,7 @@ const projects = [
     description:
       "Aplikasi Todo List yang dibuat dengan menggunakan Javascript dan Bootstrap.",
     techStack: ["HTML", "Bootstrap", "Javascript"],
+    animationDelay: "100",
   },
   {
     title: "Djaje Clone",
@@ -30,6 +33,7 @@ const projects = [
     githubLink: "https://github.com/priyanthraeka/djaje-clone",
     description: "Aplikasi ini adalah cloning dari djaje.com",
     techStack: ["HTML", "TailwindCSS", "NextJS", "ReactJS"],
+    animationDelay: "200",
   },
   {
     title: "Random Quote Machine",
@@ -38,6 +42,7 @@ const projects = [
     githubLink: "https://github.com/priyanthraeka/random-quote-machine",
     description: "Project dari freeCodeCamp",
     techStack: ["HTML", "TailwindCSS", "ReactJS"],
+    animationDelay: "300",
   },
   {
     title: "Drum Machine",
@@ -46,13 +51,26 @@ const projects = [
     githubLink: "https://github.com/priyanthraeka/drum-machine",
     description: "Project dari freeCodeCamp",
     techStack: ["HTML", "TailwindCSS", "ReactJS", "Zustand"],
+    animationDelay: "400",
+  },
+  {
+    title: "Drum Machine",
+    image: drumMachine,
+    viewLink: "https://drum-machine-pearl-beta.vercel.app/",
+    githubLink: "https://github.com/priyanthraeka/drum-machine",
+    description: "Project dari freeCodeCamp",
+    techStack: ["HTML", "TailwindCSS", "ReactJS", "Zustand"],
+    animationDelay: "500",
   },
 ];
 
 const Projects = () => {
   return (
-    <div id="projects" className="flex flex-col pt-20 text-white">
-      <h1 className="text-4xl md:text-5xl font-bold text-[#3bc9db]">
+    <div id="projects" className="flex flex-col pt-28 text-white">
+      <h1
+        className="text-4xl md:text-5xl font-bold text-[#3bc9db]"
+        data-aos="fade-up"
+      >
         My Projects
       </h1>
       <div className="flex justify-center items-start">
@@ -66,10 +84,14 @@ const Projects = () => {
               githubLink={project.githubLink}
               description={project.description}
               techStack={project.techStack}
+              animationDelay={project.animationDelay}
             />
           ))}
         </div>
       </div>
+      {/* <div className="w-fit mx-auto mt-10">
+        <Button title="Load More" />
+      </div> */}
     </div>
   );
 };

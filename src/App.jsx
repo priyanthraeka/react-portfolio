@@ -1,20 +1,32 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import Wrapper from "./layouts/Wrapper";
+import Container from "./layouts/Container";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import ScrollToTop from "./components/ScrollToTop";
+
+// Durasi animasi
+AOS.init({
+  duration: 500,
+});
 
 function App() {
   return (
-    <div className="w-full bg-[#111] pb-20">
+    <Wrapper>
+      <ScrollToTop />
       <Navbar />
-      <div className="w-full px-3 md:w-10/12 m-auto">
+      <Container>
         <Home />
         <About />
         <Projects />
         <Contact />
-      </div>
-    </div>
+      </Container>
+    </Wrapper>
   );
 }
 

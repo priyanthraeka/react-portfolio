@@ -93,9 +93,12 @@ const About = () => {
   return (
     <div
       id="about"
-      className="text-lg grid grid-cols-none grid-rows-1 lg:grid-cols-2 lg:grid-rows-none gap-10 mt-10 items-start text-white pt-20"
+      className="text-lg grid grid-cols-none grid-rows-1 lg:grid-cols-2 lg:grid-rows-none gap-10 items-start text-white pt-28"
     >
-      <div className="flex flex-col justify-center items-center w-full">
+      <div
+        className="flex flex-col justify-center items-center w-full"
+        data-aos="fade-right"
+      >
         <div className="max-w-[520px] h-auto p-5">
           <img
             src={wallpaper}
@@ -106,7 +109,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full" data-aos="fade-left">
         <h1 className="text-4xl md:text-5xl font-bold text-[#3bc9db]">
           About Me
         </h1>

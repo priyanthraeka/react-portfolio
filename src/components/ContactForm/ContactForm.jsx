@@ -1,5 +1,3 @@
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { useRef } from "react";
 import Button from "../Button";
 
@@ -28,12 +26,10 @@ const ContactForm = () => {
     nameRef.current.value = "";
     emailRef.current.value = "";
     messageRef.current.value = "";
-    toast("Pesan berhasil terkirim.");
   };
 
   return (
-    <div>
-      <ToastContainer />
+    <div data-aos="fade-left">
       <form
         className="flex flex-col gap-5 w-full text-black"
         onSubmit={submitHandler}

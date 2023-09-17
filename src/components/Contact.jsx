@@ -12,9 +12,9 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="text-lg grid grid-cols-none grid-rows-1 lg:grid-cols-2 lg:grid-rows-none gap-10 mt-10 items-start text-white pt-20"
+      className="text-lg grid grid-cols-none grid-rows-1 lg:grid-cols-2 lg:grid-rows-none gap-10 mt-10 items-start text-white pt-28"
     >
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full" data-aos="fade-right">
         <h1 className="text-5xl font-bold text-[#3bc9db]">Contact Me</h1>
         <div className="flex flex-col gap-5 mt-10 ms-1">
           <p className="text-lg flex items-center gap-5">
