@@ -5,7 +5,7 @@ import Wrapper from "./layouts/Wrapper";
 import Container from "./layouts/Container";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import About from "./components/About";
+import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop";
@@ -22,7 +22,7 @@ function App() {
       <Navbar />
       <Container>
         <Home />
-        <About />
+        <AboutMe />
         <Projects />
         <Contact />
       </Container>
